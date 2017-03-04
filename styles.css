@@ -22,6 +22,13 @@ html, body {
   height: 48px;
   border-radius: 24px;
 }
+
+.d-avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 60px;
+}
+
 .demo-layout .mdl-layout__header .mdl-layout__drawer-button {
   color: rgba(0, 0, 0, 0.54);
 }
