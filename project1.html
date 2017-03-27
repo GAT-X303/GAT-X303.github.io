@@ -21,7 +21,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="A front-end template that helps you build fast, modern mobile web apps.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
-    <title>About</title>
+    <title>Analog to Digtial Converter</title>
 
     <!-- Add to homescreen for Chrome on Android -->
     <meta name="mobile-web-app-capable" content="yes">
@@ -48,7 +48,6 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.cyan-light_blue.min.css">
     <link rel="stylesheet" href="styles.css">
-
     <style>
     #view-source {
       position: fixed;
@@ -60,7 +59,6 @@
       z-index: 900;
     }
     </style>
-
   </head>
   <body>
 
@@ -68,7 +66,7 @@
 
       <header class="demo-header mdl-layout__header mdl-color--grey-100 mdl-color-text--grey-600">
         <div class="mdl-layout__header-row">
-          <span class="mdl-layout-title">About</span>
+          <span class="mdl-layout-title">Analog to Digtial Converter</span>
           <div class="mdl-layout-spacer"></div>
         </div>
       </header>
@@ -104,55 +102,35 @@
 
           <div class="mdl-card mdl-cell mdl-cell--12-col-desktop mdl-cell--6-col-tablet mdl-cell--4-col-phone">
             <div class="mdl-card__supporting-text">
-              <h1>Who am I?</h1>
+              <h1>Overview</h1>
               <p>
-                Greetings.
-              </p>
-              <p>
-                My name is Allan Hieng, I'm currently a computer engineering student at McMaster University. This site as mentioned is my online portfolio that will showcase my skills. It will include various projects I have done
-                along with either pictures, videos or even source code.
+                To summarize this was about applying my knowledge of microprocessor systems that largely involved learning through the <a href="http://www.technologicalarts.ca/shop/store/category/130/microcontrollers/9s12/esduino.html">EsduinoXtreme</a>.
+                The microprocessor was coded in Assembly through CodeWarrior and connected with a USBDM to be programmed.
+                The project required a circuit that took an input scaled it, and converted it to digital values to be displayed using Matlab. Essentially it was a basic analog to digital circuit (ADC).
+                Below will contain pictures of the project but no schematics or source code.
               </p>
             </div>
           </div>
 
           <div class="mdl-card mdl-cell mdl-cell--12-col-desktop mdl-cell--6-col-tablet mdl-cell--4-col-phone">
             <div class="mdl-card__supporting-text">
-              <h1>Education</h1>
-              <ul>
-                <li>Computer Engineering</li>
-                <p>
-                  McMaster University : 2014 - Current
-                </p>
-                <li>Highschool Diploma</li>
-                <p>
-                  Sir John A. Macdonald Secondary School : 2010 - 2014
-                </p>
-              </ul>
-            </div>
-          </div>
-          <div class="mdl-card mdl-cell mdl-cell--12-col-desktop mdl-cell--6-col-tablet mdl-cell--4-col-phone">
-            <div class="mdl-card__supporting-text">
-              <h1>Skills</h1>
-
-
+              <h1>Pictures</h1>
+                <img src="images\project1\fig1.png" width="60%" height="60%" >Figure 1 : The block diagram of the entire setup</img>
+                <img src="images\project1\fig2.png" width="35%" height="35%"></img>
+                <img src="images\project1\fig3.png" width="21%" height="21%">Figure 2 : The flow chart for the enture setup and the ESDX</img>
+                <img src="images\project1\fig4.jpg" width="50%" height="50%">Figure 3 : The amplifying circuit built</img>
+                <img src="images\project1\fig5.jpg" width="50%" height="50%">Figure 4 : The entire setup</img>
+                <img src="images\project1\fig6.png">Figure 5 : Matlab plots on a square wave input</img>
+                <img src="images\project1\fig7.png">Figure 5 : Matlab plots on a sine wave input</img>
             </div>
           </div>
 
           <div class="mdl-card mdl-cell mdl-cell--12-col-desktop mdl-cell--6-col-tablet mdl-cell--4-col-phone">
             <div class="mdl-card__supporting-text">
-              <h1>Contact</h1>
-
+              <h1>Conclusion</h1>
               <p>
-                Email : allanhieng@gmail.com
-              </p>
-              <p>
-                <a href="https://docs.google.com/document/d/1k1JO39JSCCKBqi6_zjnVVQPLvJ6Chp8DMtt8ciPemnc/edit?usp=sharing">Resume</a>
-              </p>
-              <p>
-                <a href="https://www.linkedin.com/in/allanhieng/">LinkedIn</a>
-              </p>
-              <p>
-                <a href="https://github.com/GAT-X303">GitHub</a>
+                In the end the project worked but was not perfect. The output plots were acceptable but not entirely clean most likely due to poor adjustment of the clock inside the ESDX possibly improper use of Nyquist theorem.
+                The designed circuit(conditioning and amplifier) worked flawlessly. Generally, I have a deeper appreciation of how this process works since normally it works flawlessly while mines was not so great.
               </p>
 
             </div>
