@@ -1,0 +1,126 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" type="text/css" href="../../style.css" />
+  <title>Website Portfolio</title>
+</head>
+
+<body>
+  <!--Navigation bar components-->
+  <nav class="navbar navbar-expand-md bg-company-blue navbar-dark">
+    <a class="navbar-brand" href="../../index.html">Home</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <ul class="navbar-nav">
+
+        <!--This section may be added in future if the number of projects increases-->
+        <!--
+        <li class="nav-item">
+          <a class="nav-link" href="projects.html">Projects</a>
+        </li>
+        -->
+
+        <li class="nav-item">
+          <a class="nav-link" data-toggle="modal" data-target="#contactModal" href="">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Modal -->
+  <div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="contactModal" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="contactModal"> Contact </h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            Want to go in contact? You can find ways to do so below. I mostly respond through email though. Currently open to any offers.
+        </div>
+        <div class="modal-footer">
+          <a href="mailto:allanhieng@gmail.com" target="_blank">
+            <img src="../../icons/icons8-secured-letter-40.png">
+          </a>
+          <a href="https://www.linkedin.com/in/allanhieng/" target="_blank">
+            <img src="../../icons/icons8-linkedin-48.png">
+          </a>
+          <a href="https://github.com/GAT-X303" target="_blank">
+            <img src="../../icons/icons8-github-48.png">
+          </a>
+          <a href="" target="_blank">
+            <img src="../../icons/icons8-resume-48.png">
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--Center Piece-->
+  <div class="container-fluid ">
+    <div class="text-center">
+
+      </br>
+
+      <div class="box shadow p-3 mb-3 bg-white rounded">
+        <h1 class="display-2"> Analog to Digtial Converter </h1>
+        <h2 class="display-4"> Overview </h2>
+        <p>
+          To summarize this was about applying my knowledge of microprocessor systems that largely involved learning through the EsduinoXtreme. The microprocessor was coded in Assembly through CodeWarrior and connected with a USBDM to be programmed. The project required a circuit that took an input scaled it, and converted it to digital values to be displayed using Matlab. Essentially it was a basic analog to digital circuit (ADC). Below will contain pictures of the project but no schematics or source code.
+        </p>
+      </div>
+
+      <div class="box shadow p-3 mb-3 bg-white rounded">
+        <h2 class="display-4"> Technical Aspects  </h2>
+        <p>
+
+        </p>
+      </div>
+
+      <div class="box shadow p-3 mb-3 bg-white rounded">
+        <h2 class="display-4"> Skills Applied </h2>
+        <h2 class="lead"> Circuit Design </h3>
+        <p>
+          An amplifying circuit was constructed to scale the input signal to a suitable range for the ESDX. The circuit was a simply 2 op-amp circuit with capacitors and resistors.
+        </p>
+        <h2 class="lead"> Assembly Language </h3>
+        <p>
+          The ESDX was programmed in Assembly that involved configuring which pin was used as input and output. It also involved setting the sampling frequency and the bit-resolution.
+        </p>
+        <h2 class="lead"> Matlab </h3>
+        <p>
+          QMatlab was software used to plot the results of the ADC. Anything else could have been used, but Matlab was used since it was very simple to configure it to work with a serial input from the ESDX along with the ease of plotting.
+        </p>
+      </div>
+
+      <div class="box shadow p-3 mb-3 bg-white rounded">
+        <h2 class="display-4"> Conclusion </h2>
+        <p>
+          In the end the project worked but was not perfect. The output plots were acceptable but not entirely clean most likely due to poor adjustment of the clock inside the ESDX possibly improper use of Nyquist theorem. The designed circuit(conditioning and amplifier) worked flawlessly. Generally, I have a deeper appreciation of how this process works since normally it works flawlessly while mines was not so great.
+        </p>
+      </div>
+
+      </br>
+
+    </div>
+  </div>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+</body>
+
+</html>

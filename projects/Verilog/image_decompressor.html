@@ -1,0 +1,128 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" type="text/css" href="../../style.css" />
+  <title>Image Decompressor</title>
+</head>
+
+<body>
+  <!--Navigation bar components-->
+  <nav class="navbar navbar-expand-md bg-company-blue navbar-dark">
+    <a class="navbar-brand" href="../../index.html">Home</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <ul class="navbar-nav">
+
+        <!--This section may be added in future if the number of projects increases-->
+        <!--
+        <li class="nav-item">
+          <a class="nav-link" href="projects.html">Projects</a>
+        </li>
+        -->
+
+        <li class="nav-item">
+          <a class="nav-link" data-toggle="modal" data-target="#contactModal" href="">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Modal -->
+  <div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="contactModal" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="contactModal"> Contact </h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            Want to go in contact? You can find ways to do so below. I mostly respond through email though. Currently open to any offers.
+        </div>
+        <div class="modal-footer">
+          <a href="mailto:allanhieng@gmail.com" target="_blank">
+            <img src="../../icons/icons8-secured-letter-40.png">
+          </a>
+          <a href="https://www.linkedin.com/in/allanhieng/" target="_blank">
+            <img src="../../icons/icons8-linkedin-48.png">
+          </a>
+          <a href="https://github.com/GAT-X303" target="_blank">
+            <img src="../../icons/icons8-github-48.png">
+          </a>
+          <a href="" target="_blank">
+            <img src="../../icons/icons8-resume-48.png">
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--Center Piece-->
+  <div class="container-fluid ">
+    <div class="text-center">
+      </br>
+
+      <div class="box shadow p-3 mb-3 bg-white rounded">
+        <h1 class="display-2"> Image Decompressor </h1>
+        <h2 class="display-4"> Overview </h2>
+        <p>
+          The goal of this project was to implement an image decompressor using hardware. Specifically, a custom McMaster image compression revision 11 (.mic11) image compression specification in hardware. Compressed data for a 320 x 240 pixel image will be delivered to the Altera DE2 board via UART interface from a PC and stored in the an external SRAM. The image is then decoded stored back into the SRAM and output via VGA.
+          </br></br> This project was completed for Digital Systems Design course at McMaster university.
+        </p>
+      </div>
+
+      <div class="box shadow p-3 mb-3 bg-white rounded">
+        <h2 class="display-4"> Technical Aspects </h2>
+        <p>
+          Coming Soon
+        </p>
+      </div>
+
+      <div class="box shadow p-3 mb-3 bg-white rounded">
+        <h2 class="display-4"> Skill Applied </h2>
+        <h2 class="lead"> Verilog </h3>
+        <p>
+          Verilog in terms of syntax is very similar to C, which is good. I would consider Verilog difficult at least in the instance of this project. This is primarily because my approach is very ‘programming’ like which is not what it is. It’s a hardware description language which was large emphasis in the course in general: relating source code to hardware. Looking back now, the hard part was the project itself coupled with other course work and responsibilities.
+        </p>
+        <h2 class="lead"> Relating hardware to source code </h3>
+        <p>
+          A new skill developed through this project and course which also had large emphasis. Difficult and may seem tedious at first, but I believe it has made me improved my problem solving skills. It will also help me as I progress through more hardware based projects.
+        </p>
+        <h2 class="lead"> Work in conjuction with a partner </h3>
+        <p>
+          A first time for myself at least in terms of coding. It was nice to have a partner and he was primary the reason we got as far as we did. However, there was creative clashing where multiple solutions were proposed to problems. Usually, the solutions that were accepted were the ones that would be satisfy the requirement and involve the least amount of coding. Since only one solution could be used, there was a lot of time spent discussing and explaining what each other ideas were.
+        </p>
+      </div>
+
+      <div class="box shadow p-3 mb-3 bg-white rounded">
+        <h2 class="display-4"> Conclusion </h2>
+        <p> This was the largest scale project I have ever worked on in terms of lines of code and time spent.
+          I did find it rather difficult, but I believe it was a good learning experience for myself as I eventually hope to work on even larger projects.
+          I wasn’t too happy with my performance with this project, as I believe I wasted too much time overcomplicating ideas that were typically simple.
+          In the end I can’t say I enjoyed it, but I don’t regret doing this project.
+        </p>
+      </div>
+
+      </br>
+
+    </div>
+  </div>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+</body>
+
+</html>
