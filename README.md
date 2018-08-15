@@ -7,7 +7,9 @@ This is the repository for my portfolio website where I will store projects that
 # Update Log
 
 2017
-- Inital launch using Material Design template.
+
+-   Initial launch using Material Design template.
 
 August 2018
-- Redesign using Bootstrap 4 and designed from scratch.
+
+-   Redesign using Bootstrap 4 and designed from scratch.
