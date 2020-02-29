@@ -68,7 +68,7 @@
       <div class="box shadow p-3 mb-3 bg-white rounded">
         <h1 class="display-2"> Analog to Digtial Converter </h1>
         <h2 class="display-4"> Overview </h2>
-        <p>
+        <p class="text-left">
           To summarize this was about applying my knowledge of microprocessor systems that largely involved learning through the EsduinoXtreme. The microprocessor was coded in Assembly through CodeWarrior and connected with a USBDM to be programmed. The project required a circuit that took an input scaled it, and converted it to digital values to be displayed using Matlab. Essentially it was a basic analog to digital circuit (ADC). Below will contain pictures of the project but no schematics or source code.
           </br>
           </br>
@@ -78,76 +78,71 @@
 
       <div class="box shadow p-3 mb-3 bg-white rounded">
         <h2 class="display-4"> Technical Aspects  </h2>
-        <p>
-          The entire project was completed in roughly 2 weeks. It was not exactly hard since the specifications were given for us to be satisfied.
+        <p class=>
+          <div class="text-left">
+          The entire project was completed in roughly 2 weeks. It wasn't too hard since the specifications were given for us to be satisfied.
           Some of specifications included changing the clock speed and bus sizes to work for the output plots. Essentially the work needed to be done was
           to ensure the ESDX could properly communicate with the computer and output "real-time" on Matlab.
-
+          </div>
           </br >
 
           <img src="./images/fig1.png" class="img-fluid">
           </br>
           Figure 1 : The block diagram of the entire setup
-
           </br>
           </br>
-
           <img src="./images/fig2.png" class="img-fluid">
           <img src="./images/fig2_1.png" class="img-fluid">
           </br>
           Figure 2 : The flow chart for the entire setup and the ESDX
-
           </br>
           </br>
-
           <img src="./images/fig3.jpg" class="img-fluid">
           </br>
           Figure 3 : The amplifying circuit built
-
           </br>
           </br>
-
           <img src="./images/fig4.jpg" class="img-fluid">
           </br>
           Figure 4 : The entire setup
-
           </br>
           </br>
-
           <img src="./images/fig5.png" class="img-fluid">
           </br>
           Figure 5 : Matlab plots on a sine wave input
-
           </br>
           </br>
-
           <img src="./images/fig6.png" class="img-fluid">
           </br>
           Figure 6 : Matlab plots on a square wave input
-
         </p>
       </div>
 
       <div class="box shadow p-3 mb-3 bg-white rounded">
         <h2 class="display-4"> Skills Applied </h2>
         <h2 class="lead"> Circuit Design </h3>
-        <p>
-          An amplifying circuit was constructed to scale the input signal to a suitable range for the ESDX. The circuit was a simply 2 op-amp circuit with capacitors and resistors.
+        <p class="text-left">
+          An amplifying circuit was constructed to scale the input signal to a suitable range for the ESDX. The circuit was a simply 2 op-amp circuit with capacitors and resistors. Choosing the correct circuit was not too diffult as it was very obvious we wanted X2 of the input.
+          This all occured around the same time during our circuits course where we began to use OP-AMPs for gain. A very shocking coincidence.
         </p>
         <h2 class="lead"> Assembly Language </h3>
-        <p>
-          The ESDX was programmed in Assembly that involved configuring which pin was used as input and output. It also involved setting the sampling frequency and the bit-resolution.
+        <p class="text-left">
+          The ESDX was programmed in Assembly that involved configuring which pin was used as input and output. This was done the CodeWarrior IDE, which had an option of coding in C instead. Since aim of the class was to teach Assembly, we did not use C.
+          It also involved setting the sampling frequency and the bit-resolution. We weren't given the code, but had past labs to look on. It was merely a matter of setting the right pins to the correct configurations.
         </p>
         <h2 class="lead"> Matlab </h3>
-        <p>
-          QMatlab was software used to plot the results of the ADC. Anything else could have been used, but Matlab was used since it was very simple to configure it to work with a serial input from the ESDX along with the ease of plotting.
+        <p class="text-left">
+          Matlab was the software used to plot the results of the ADC. Anything else could have been used, but Matlab was used since it was very simple to configure it to work with a serial input from the ESDX along with the ease of plotting. At the point of completion, I'm not sure anything else coudl've have been used.
+          In theory Octave should have worked. Also putting the results in a text document would have worked as well, but seemed like an extra step if all we wanted to do was plot it.
         </p>
       </div>
 
       <div class="box shadow p-3 mb-3 bg-white rounded">
         <h2 class="display-4"> Conclusion </h2>
-        <p>
-          In the end the project worked but was not perfect. The output plots were acceptable but not entirely clean most likely due to poor adjustment of the clock inside the ESDX possibly improper use of Nyquist theorem. The designed circuit(conditioning and amplifier) worked flawlessly. Generally, I have a deeper appreciation of how this process works since normally it works flawlessly while mines was not so great.
+        <p class="text-left">
+          In the end the project worked but was not perfect. The output plots were acceptable but not entirely clean most likely due to poor adjustment of the clock inside the ESDX possibly improper use of Nyquist theorem.
+          The designed circuit(conditioning and amplifier) worked flawlessly. Generally, I have a deeper appreciation of how this process works since normally it works flawlessly while mines was not so great. That being said, I did not find it a hard project to do.
+          It could've been better,  but it may have been a case of "in theory, but in practice".
         </p>
       </div>
 
