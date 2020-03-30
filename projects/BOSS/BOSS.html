@@ -108,9 +108,33 @@
         </p>
         <h3 class="lead"> Mechanical Aspects and Electrical Aspects </h3>
         <p class="text-left">
+          This is was likley the hardest the part of the project. There are many ways to hit the shuttle, but we had to use a way that was feasible and would not destroy feather shuttles. There was also the topic of how birds would be loaded.
+          For our purposes we decided to stick to nylon shuttles since they're more durable and can handle the abuse better than feather ones. The goal would be to use feather ones eventually. This is because every serious badminton tournament would use feather shuttles, and presumbly
+          only serious players would be interested in this proudct.
+          </br>
+          </br>
           The inital question is how to launch the bird. Many things were considered from using a robotic arm that would swing a racket to using compressed air. While exploring online, we found some other products that aimed to same thing. Some used brushless motors, and they seemed to have higher output
           when compared to say a brushed motor. Output here refers to torque, as I was very skeptical if a brushed motor could launch a shuttle to the far end of the court. The idea was that wheels would be connected to the brushless motor and the cork of the shuttle would make contact
-          and thus be launched. For our inital protoype
+          and thus be launched. For our inital tests we used the wheels from a toy stroller, as it was really cheap. We didn't have any reference levels, but we knew that the size of the wheel would be factor. As seen in video 1, the results were actually better than anticipated.
+          Not long after, we decided to 3D print some wheels for better testing.
+          </br>
+          </br>
+          The next part was how to deliver the shuttle to the launcher. We knew that the shuttles would be stored in a tube that would be slightly larger than a regular badminton tube. This is so the birds would keep falling when the next one is pulled, and a flexible mesh would be used
+          to stop them all from falling in at once. The shuttles would then get caught on this mesh which with a bit of pull would release the bird. We decided to use some "rails" that would guide the shuttle into the wheels. Stepper motors were then used to pull the shuttle down.
+          This is done by attached "arms" to the stepper motors, which would turn and extert a very small pull. Stepper motors were used largely because they were cheap and we had used them in our control systems class.
+          </br>
+          </br>
+          A lazy susan bearing was chosen to to  help the device aim the sides. This was largely chosen by my group members since they've had preivous expiernce using it. The method chosen was to have another stepper motor control a gear that would be connected to the the lazy susan bearing.
+          Originally we tried it without a bearing, but it caused the whole turning portiion to become more rigid. The bearing was more smooth and offered more consistency. Originally, we had wanted to the device to tilt so that we could control the angle. After some consideration, we decided againist it.
+          Mostly due to time, and that the value of being able to perform shots left/right is of more vaule. The tripod this was mounted on could also be tilted up or down. To us, this was "good enough" half measure.
+          </br>
+          </br>
+          The last important part of our design was how we were going to controll the the horizontal distance. We did have control over the motors, but there issues which I will discuss later. Something we noticed during our testing was that how much contact the cork of the shuttle had with the wheels would effect <thead>
+          distance it travelled. This was likely because more contact meant more transfer of force. We then used another stepper motor that would move the "launching guide" closer or further. This would be how we would control distance.
+          </br>
+          </br>
+          For the electrical side of things, we originally wanted everything to be able to work through a battery or by plugging into a single outlet. This did not occur but I believe it would've been something we could figure out as it was not high on our list of tasks.
+          The bruhsless motors would require the most power since they're the most powerful component.
         </p>
         <p>
           Assigned to:
@@ -121,20 +145,22 @@
           </br>
           Allan Hieng
         </p>
-        <p class="text-left">
-          This is was likley the hardest the part of the project. There are many ways to hit the shuttle, but we had to use a way that was feasible and would not destroy feather shuttles. There was also the topic of how birds would be loaded.
-          For our purposes we decided to stick to nylon shuttles since they're more durable and can handle the abuse better than feather ones.
-        </p>
         <h3 class="lead"> Microcontroller Aspects </h3>
+        <p class='text-left'>
+          I was left soley in charge of microcontroller part. I did consult my memebers for many parts, but I would say I did most of the work this part still. The choice of microcontroller was easy; it would be Arduino. There may be better choices, especially in terms of size.
+          However, we felt that the Arduino was 'the' go to microcontroller that would be affordable while being open source. The microcontroller acts as the brain of the entire device. It recieves the commands from the Android app via Bluetooth then it sends the required data
+          to each port. We decided to use an HC-06 Bluetooth module since we already had one and that they were a very common module used for Bluetooth. 
+        </p>
         <p>
           Assigned to:
           </br>
           Allan Hieng
         </p>
-        <p class="text-left">
-          WIP
-        </p>
         <h3 class="lead"> Android App Aspects </h3>
+        <p class='text-left'>
+          Mackenzie and I worked on this part since I had previous expiernce developing an Android app. My primary task was to make sure that we could connect the HC-06 module to the phone, while hers was to develop the app that would be used. I won't speak to much about the design of app
+          since I believe it's a matter of taste and neither of us are experienced UI designers. The first task was to establish Bluetooth connection. This was surprinsgly easy. It was a matter of opening a Bluetooth socket.
+        </p>
         <p>
           Assigned to:
           </br>
@@ -148,9 +174,15 @@
         <h2 class="display-4"> Demonstration </h2>
         <iframe width="560" height="315" src="https://www.youtube.com/embed/FofK4w0-zFQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </br>
+        Video 1
+        </br>
         <iframe width="560" height="315" src="https://www.youtube.com/embed/7THxUNbCe1k" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </br>
+        Video 2
+        </br>
         <iframe width="560" height="315" src="https://www.youtube.com/embed/hDr3LVF77vc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </br>
+        Video 3
         </br>
         <iframe width="560" height="315" src="https://www.youtube.com/embed/uYNa1FDYgOg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       </div>
