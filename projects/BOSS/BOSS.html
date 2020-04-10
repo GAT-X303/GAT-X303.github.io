@@ -142,10 +142,29 @@
             <p>Figure 3. Drawing view of the final prototype of BOSS</p>
           </div>
           For the electrical side of things, we originally wanted everything to be able to work through a battery or by plugging into a single outlet. This did not occur but I believe it would've been something we could figure out as it was not high on our list of tasks.
-          The bruhsless motors would require the most power since they're the most powerful component. The requirements to run the bruhsless motors were 12V and a max of 20A.
+          The bruhsless motors would require the most power since they're the most powerful component. The requirements to run the bruhsless motors were 12V at least and a max of 20A.
           The motors themselves were controlled via duty cycle, meaning that as we increased the duty cylce they would draw more current.
-          They would turn on at roughly 47% duty cylce, which was NOT a very slow speed. We ended up using the range from 47% - 51%; more on this later. Next was the requirements of the Adruino, which was that it required ______________.
-          The stepper motors required ___________________, which be could be delievered from the Adruino directly.
+          They would turn on at roughly 47% duty cylce, which was NOT a very slow speed. We ended up using the range from 47% - 51%; more on this later. Next was the requirements of the Adruino Uno, which was a range of 6-20V.
+          The stepper motors required 5-12V and the HC-06 Bluetooth module needed 5V , which be could be delievered from the Adruino directly. In total we used 2 brushless motors, 4 stepper motors, 1 HC-06 Bluetooth module and 1 Adruino Uno. The Adruino Uno could take a barrel connector
+          which happend to have a lot lying around of many different ratings. They were all sufficent for use to power the Adruino and it's components. The only exception was the brushless motors.
+          The Adruino had enough power to turn it on, but not enough to run it. This is likely due to the needed for more power so we decided to give a power supply of its own.
+          </br>
+          </br>
+          Now, I would like to begin to discuss the issues with our mechanical design and some possible solutions. The first issue that held us back the most was the slippage on the wheels.
+          The brushless motors could go fast, maybe even too fast. The issue was that once it got to fast it could no longer grip the cork of the shuttle, thus rendering any speed beyond a certain point "useless".
+          We came to this conclusion from taking slow motion videos with our phones and listening for the sound when the shuttle was launched. This was confirmed when we tried putting rubber we had around the wheels which lead to the shuttle going much further than it previously did.
+          So to increase the grip around the wheels we decided to use some rubber that I had lying around. I believe it was orginally used for taking blood, as when you stretch it there is more friction. The worked great one placed on the wheels.
+          However, it could not stay on the wheels easily and would come undone mutliple times during testing. We ended up using it for the remaining of the testing.
+          As the day of the expo drew closer, we began to explore other options that would be more permanent. We came across a spray called 'plasti-dip'; a rubber coating spray used on car tires.
+          We applied some on to the wheels, and it improved the grip but not to the degree we had with the rubber band. At that point, it was what we ended up using on the day of the expo.
+          Even to this day, I'm ensure if we knew a solution to this without getting something custom made. A good option would be to get custom molded plastic that would fit around the wheels.
+          That way they would stay on, and be easily replaced. There could be alternatives that we never found, and really we should have consulted other parties for more.
+          </br>
+          </br>
+          As far as electrical issues goes, it really wasn't THAT bad. We would've have preferred to reduce the number of outlets needed 1. As mentioned earlier, the brushless motors needed their own power source since they drew too much.
+          Although, it sounds like making up excuses I would really blame this on the lack of time. We chose to work on the functional aspects of the device as opposed to QOL changes. In hindsight, I think we were all capable of finding a circuit that could do this.
+          Off the top of my head, we would need use the power source we used the for the brushless motors and scale it down for the Adruino. Effectively a gain circuit would be used that would get the voltage and current to a fraction the source.
+          Again, it SEEMs simple on paper. I'm sure it would be more diffcult but I think we could've figured it out eventaully.
         </p>
         <p>
           Assigned to:
