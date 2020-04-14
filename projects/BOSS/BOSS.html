@@ -141,6 +141,7 @@
             <img src="./images/fig3.png" class="img-fluid">
             <p>Figure 3. Drawing view of the final prototype of BOSS</p>
           </div>
+          <div class='text-left'>
           For the electrical side of things, we originally wanted everything to be able to work through a battery or by plugging into a single outlet. This did not occur but I believe it would've been something we could figure out as it was not high on our list of tasks.
           The bruhsless motors would require the most power since they're the most powerful component. The requirements to run the bruhsless motors were 12V at least and a max of 20A.
           The motors themselves were controlled via duty cycle, meaning that as we increased the duty cylce they would draw more current.
@@ -164,7 +165,8 @@
           As far as electrical issues goes, it really wasn't THAT bad. We would've have preferred to reduce the number of outlets needed 1. As mentioned earlier, the brushless motors needed their own power source since they drew too much.
           Although, it sounds like making up excuses I would really blame this on the lack of time. We chose to work on the functional aspects of the device as opposed to QOL changes. In hindsight, I think we were all capable of finding a circuit that could do this.
           Off the top of my head, we would need use the power source we used the for the brushless motors and scale it down for the Adruino. Effectively a gain circuit would be used that would get the voltage and current to a fraction the source.
-          Again, it SEEMs simple on paper. I'm sure it would be more diffcult but I think we could've figured it out eventaully.
+          Again, it SEEMs simple on paper. I'm sure it would be more diffcult but I think we could've figured it out eventually.
+          </div>
         </p>
         <p>
           Assigned to:
@@ -179,8 +181,14 @@
         <p class='text-left'>
           I was left soley in charge of microcontroller part. I did consult my memebers for many parts, but I would say I did most of the work this part still. The choice of microcontroller was easy; it would be Arduino. There may be better choices, especially in terms of size.
           However, we felt that the Arduino was 'the' go to microcontroller that would be affordable while being open source. The microcontroller acts as the brain of the entire device. It recieves the commands from the Android app via Bluetooth then it sends the required data
-          to each port. We decided to use an HC-06 Bluetooth module since we already had one and that they were a very common module used for Bluetooth.
+          to each port. We decided to use an HC-06 Bluetooth module since we already had one and that they were a very common module used for Bluetooth. The steper motors were chosen purely because they were cheap and drew little power as we knew we wouldn't need stronger ones.
         </p>
+        </br>
+        </br>
+        <div>
+          <img src="./images/fig4.png" class="img-fluid">
+          <p>Figure 4. Adruino Schematic of BOSS</p>
+        </div>
         <p>
           Assigned to:
           </br>
