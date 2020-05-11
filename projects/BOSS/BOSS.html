@@ -66,14 +66,16 @@
       <div class="box shadow p-3 mb-3 bg-white rounded">
         <h1 class="display-4">Badminton Open Source System</h1>
         <p class="text-left">
-          This was part of the final year capstone at McMaster University. In the deparment of ECE, we are allowed to virtually to anything as long as it's approved.
+          This was part of the final year capstone at McMaster University. In the department of ECE, we are allowed to do virtually to anything as long as it's approved.
           Typically the only requirements is that there is a hardware component and that it's realistic to complete. This must be completed in groups of at least 2.
-          The project that our group decided to do was create an automated badminton shuttle launcher that could be either cheap or easily built and open source. The idea was orginally mine, which was inspired by my passion to improve at the sport but could never afford proper training.
+          The project that our group decided to do was create an automated badminton shuttle launcher that could be either cheap or easily built and open source. The idea was originally mine, which was inspired by my passion to improve at the sport but could never afford proper training.
           We wanted to develop the product using items that are widely available so that it could be recreated by others.
+
           </br>
           </br>
-          The goal was to eventually have a respository of different "builds" of the same or similar device. These would use different parts, fill different niches or even superceed the original.
-          These different builds would be contributed by other people interested in the product. People can then choose from these builds and look through a list of parts and guides on how to build one themselves.
+          The goal was to eventually have a repository of different "builds" of the same or similar device. These would use different parts, fill different niches or even supersede the original.
+           These different builds would be contributed by other people interested in the product. People can then choose from these builds and look through a list of parts and guides on how to build one themselves.
+
           </br>
           </br>
           Group Members:
@@ -92,14 +94,16 @@
         <h2 class="display-4"> Project Report </h2>
         <h3 class="lead"> Motivation </h3>
         <p class="text-left">
-          As an avid badminton player, I had always looked for ways to improve. Often the best and most reccomended way would be to get a coach. However, in the city I grew up in there was quite literally only 1 coach unlike cities where the sport is more popular.
+          As an avid badminton player, I had always looked for ways to improve. Often the best and most recommended way would be to get a coach. However, in the city I grew up in there was quite literally only 1 coach unlike cities where the sport is more popular.
           Nowadays, it's much better, but the same thing still remains that acts as a barrier for new players: cost. Badminton can be very expensive, especially if you get training. I won't get into detail what a coach can offer, because BOSS was not designed to replace one.
-          Badminton requires 2 people to properly practice, the quality of the practice is determined by the skill of the players and how consistent they can "feed" shots the person practicing. BOSS looks to fill in this gap by offering a DIY open source alternative.
+          Badminton requires 2 people to properly practice, the quality of the practice is determined by the skill of the players and how consistent they can "feed" shots to the person practicing. BOSS looks to fill in this gap by offering a DIY open source alternative.
+
         </p>
         <h3 class="lead"> Background Knowledge </h3>
         <p class="text-left">
-          When feeding shuttles to a player, there's generally only a few shots that are used for practice. These general shots can be seen below on figure 1.  There's much more variation of each shot, but for these are good enough for practice as it's more about the what shot is played after and how the player reacts.
-          A good feeder will hit the shots to the same locations with a very good degree of consistency and while vary shots based on the drill. For our purposes we will prefer to be able to hit a few types of shots at high degree of consistency as opposed to hitting all the shots with a lower degree of consistency.
+          When feeding shuttles to a player, there's generally only a few shots that are used for practice. These general shots can be seen below on figure 1.  There's much more variation of each shot, but these are good enough for practice as it's more about what shot is played after and how the player reacts.
+          A good feeder will hit the shots to the same locations with a very good degree of consistency and while varying shots based on the drill. For our purposes we will prefer to be able to hit a few types of shots at a high degree of consistency as opposed to hitting all the shots with a lower degree of consistency.
+
         <div class="text-center">
           <img src="./images/fig1.png" class="img-fluid">
           <p> Figure 1. The 6 basic flight paths of shuttles </p>
@@ -107,29 +111,33 @@
         </p>
         <h3 class="lead"> Mechanical Aspects and Electrical Aspects </h3>
         <p class="text-left">
-          This is was likley the hardest the part of the project. There are many ways to hit the shuttle, but we had to use a way that was feasible and would not destroy feather shuttles. There was also the topic of how birds would be loaded.
-          For our purposes we decided to stick to nylon shuttles since they're more durable and can handle the abuse better than feather ones. The goal would be to use feather ones eventually. This is because every serious badminton tournament would use feather shuttles, and presumbly
-          only serious players would be interested in this proudct.
+          This was likely the hardest part of the project. There are many ways to hit the shuttle, but we had to use a way that was feasible and would not destroy feather shuttles. There was also the topic of how birds would be loaded.
+          For our purposes we decided to stick to nylon shuttles since they're more durable and can handle the abuse better than feather ones. The goal would be to use feather ones eventually. This is because every serious badminton tournament would use feather shuttles, and presumably
+          only serious players would be interested in this product.
+
           </br>
           </br>
-          The inital question is how to launch the bird. Many things were considered from using a robotic arm that would swing a racket to using compressed air. While exploring online, we found some other products that aimed to same thing. Some used brushless motors, and they seemed to have higher output
+          The initial question is how to launch the bird. Many things were considered from using a robotic arm that would swing a racket to using compressed air. While exploring online, we found some other products that aimed to do the same thing. Some used brushless motors, and they seemed to have higher output
           when compared to say a brushed motor. Output here refers to torque, as I was very skeptical if a brushed motor could launch a shuttle to the far end of the court. The idea was that wheels would be connected to the brushless motor and the cork of the shuttle would make contact
-          and thus be launched. For our inital tests we used the wheels from a toy stroller, as it was really cheap. We didn't have any reference levels, but we knew that the size of the wheel would be factor. As seen in video 1, the results were actually better than anticipated.
+          and thus be launched. For our initial tests we used the wheels from a toy stroller, as it was really cheap. We didn't have any reference levels, but we knew that the size of the wheel would be a factor. As seen in video 1, the results were actually better than anticipated.
           Not long after, we decided to 3D print some wheels for better testing.
+
           </br>
           </br>
           The next part was how to deliver the shuttle to the launcher. We knew that the shuttles would be stored in a tube that would be slightly larger than a regular badminton tube. This is so the birds would keep falling when the next one is pulled, and a flexible mesh would be used
           to stop them all from falling in at once. The shuttles would then get caught on this mesh which with a bit of pull would release the bird. We decided to use some "rails" that would guide the shuttle into the wheels. Stepper motors were then used to pull the shuttle down.
-          This is done by attached "arms" to the stepper motors, which would turn and extert a very small pull. Stepper motors were used largely because they were cheap and we had used them in our control systems class.
+          This is done by attached "arms" to the stepper motors, which would turn and exert a very small pull. Stepper motors were used largely because they were cheap and we had used them in our control systems class.
+
           </br>
           </br>
-          A lazy susan bearing was chosen to to  help the device aim the sides. This was largely chosen by my group members since they've had preivous expiernce using it. The method chosen was to have another stepper motor control a gear that would be connected to the the lazy susan bearing.
-          Originally we tried it without a bearing, but it caused the whole turning portiion to become more rigid. The bearing was more smooth and offered more consistency. Originally, we had wanted to the device to tilt so that we could control the angle. After some consideration, we decided againist it.
-          Mostly due to time, and that the value of being able to perform shots left/right is of more vaule. The tripod this was mounted on could also be tilted up or down. To us, this was "good enough" half measure.
+          A lazy susan bearing was chosen to  help the device aim the sides. This was largely chosen by my group members since they've had previous experience using it. The method chosen was to have another stepper motor control a gear that would be connected to the lazy susan bearing.
+          Originally we tried it without a bearing, but it caused the whole turning portion to become more rigid. The bearing was more smooth and offered more consistency. Originally, we had wanted the device to tilt so that we could control the angle. After some consideration, we decided against it.
+          Mostly due to time, and that the value of being able to perform shots left/right is of more value. The tripod this was mounted on could also be tilted up or down. To us, this was "good enough" half measure.
+
           </br>
           </br>
-          The last important part of our design was how we were going to control the the horizontal distance. We did have control over the motors, but there issues which I will discuss later. Something we noticed during our testing was that how much contact the cork of the shuttle had with the wheels would effect <thead>
-          distance it travelled. This was likely because more contact meant more transfer of force. We then used another stepper motor that would move the "launching guide" closer or further. This would be how we would control distance.
+            The last important part of our design was how we were going to control the horizontal distance. We did have control over the motors, but there issues which I will discuss later. Something we noticed during our testing was how much contact the cork of the shuttle had with the wheels would and how it would affect the distance it travelled. This was likely because more contact meant more transfer of force. 
+            We then used another stepper motor that would move the "launching guide" closer or further. This would be how we would control distance.
           </br>
           </br>
           <div>
@@ -142,30 +150,30 @@
             <p>Figure 3. Drawing view of the final prototype of BOSS</p>
           </div>
           <div class='text-left'>
-          For the electrical side of things, we originally wanted everything to be able to work through a battery or by plugging into a single outlet. This did not occur but I believe it would've been something we could figure out as it was not high on our list of tasks.
-          The bruhsless motors would require the most power since they're the most powerful component. The requirements to run the bruhsless motors were 12V at least and a max of 20A.
-          The motors themselves were controlled via duty cycle, meaning that as we increased the duty cylce they would draw more current.
-          They would turn on at roughly 47% duty cylce, which was NOT a very slow speed. We ended up using the range from 47% - 51%; more on this later. Next was the requirements of the Adruino Uno, which was a range of 6-20V.
-          The stepper motors required 5-12V and the HC-06 Bluetooth module needed 5V , which be could be delievered from the Adruino directly. In total we used 2 brushless motors, 4 stepper motors, 1 HC-06 Bluetooth module and 1 Adruino Uno. The Adruino Uno could take a barrel connector
-          which happend to have a lot lying around of many different ratings. They were all sufficent for use to power the Adruino and it's components. The only exception was the brushless motors.
-          The Adruino had enough power to turn it on, but not enough to run it. This is likely due to the needed for more power so we decided to give a power supply of its own.
+            For the electrical side of things, we originally wanted everything to be able to work through a battery or by plugging into a single outlet. This did not occur but I believe it would've been something we could figure out as it was not high on our list of tasks.
+            The brushless motors would require the most power since they're the most powerful component. The requirements to run the brushless motors were 12V at least and a max of 20A.
+            The motors themselves were controlled via duty cycle, meaning that as we increased the duty cycle they would draw more current.
+            They would turn on at roughly 47% duty cycle, which was NOT a very slow speed. We ended up using the range from 47% - 51%; more on this later. Next was the requirements of the Arduino Uno, which was a range of 6-20V.
+            The stepper motors required 5-12V and the HC-06 Bluetooth module needed 5V , which could be delivered from the Arduino directly. In total we used 2 brushless motors, 4 stepper motors, 1 HC-06 Bluetooth module and 1 Arduino Uno. The Arduino Uno could take a barrel connector
+            which happens to have a lot lying around of many different ratings. They were all sufficient for use to power the Adruino and its components. The only exception was the brushless motors.
+            The Adruino had enough power to turn it on, but not enough to run it. This is likely due to the need for more power so we decided to give a power supply of its own.
           </br>
           </br>
-          Now, I would like to begin to discuss the issues with our mechanical design and some possible solutions. The first issue that held us back the most was the slippage on the wheels.
-          The brushless motors could go fast, maybe even too fast. The issue was that once it got to fast it could no longer grip the cork of the shuttle, thus rendering any speed beyond a certain point "useless".
-          We came to this conclusion from taking slow motion videos with our phones and listening for the sound when the shuttle was launched. This was confirmed when we tried putting rubber we had around the wheels which lead to the shuttle going much further than it previously did.
-          So to increase the grip around the wheels we decided to use some rubber that I had lying around. I believe it was orginally used for taking blood, as when you stretch it there is more friction. The worked great one placed on the wheels.
-          However, it could not stay on the wheels easily and would come undone mutliple times during testing. We ended up using it for the remaining of the testing.
-          As the day of the expo drew closer, we began to explore other options that would be more permanent. We came across a spray called 'plasti-dip'; a rubber coating spray used on car tires.
-          We applied some on to the wheels, and it improved the grip but not to the degree we had with the rubber band. At that point, it was what we ended up using on the day of the expo.
-          Even to this day, I'm ensure if we knew a solution to this without getting something custom made. A good option would be to get custom molded plastic that would fit around the wheels.
-          That way they would stay on, and be easily replaced. There could be alternatives that we never found, and really we should have consulted other parties for more.
+            Now, I would like to begin to discuss the issues with our mechanical design and some possible solutions. The first issue that held us back the most was the slippage on the wheels.
+            The brushless motors could go fast, maybe even too fast. The issue was that once it got too fast it could no longer grip the cork of the shuttle, thus rendering any speed beyond a certain point "useless".
+            We came to this conclusion from taking slow motion videos with our phones and listening for the sound when the shuttle was launched. This was confirmed when we tried putting rubber around the wheels which lead to the shuttle going much further than it previously did.
+            So to increase the grip around the wheels we decided to use some rubber that I had lying around. I believe it was originally used for taking blood, as when you stretch it there is more friction. The worked great one placed on the wheels.
+            However, it could not stay on the wheels easily and would come undone multiple times during testing. We ended up using it for the remainder of the testing.
+            As the day of the expo drew closer, we began to explore other options that would be more permanent. We came across a spray called 'plasti-dip'; a rubber coating spray used on car tires.
+            We applied some on to the wheels, and it improved the grip but not to the degree we had with the rubber band. At that point, it was what we ended up using on the day of the expo.
+            Even to this day, I'm sure if we knew a solution to this without getting something custom made. A good option would be to get custom molded plastic that would fit around the wheels.
+            That way they would stay on, and be easily replaced. There could be alternatives that we never found, and really we should have consulted other parties for more.
           </br>
           </br>
-          As far as electrical issues goes, it really wasn't THAT bad. We would've have preferred to reduce the number of outlets needed 1. As mentioned earlier, the brushless motors needed their own power source since they drew too much.
-          Although, it sounds like making up excuses I would really blame this on the lack of time. We chose to work on the functional aspects of the device as opposed to QOL changes. In hindsight, I think we were all capable of finding a circuit that could do this.
-          Off the top of my head, we would need use the power source we used the for the brushless motors and scale it down for the Adruino. Effectively a gain circuit would be used that would get the voltage and current to a fraction the source.
-          Again, it SEEMs simple on paper. I'm sure it would be more diffcult but I think we could've figured it out eventually.
+            As far as electrical issues goes, it really wasn't THAT bad. We would've preferred to reduce the number of outlets needed 1. As mentioned earlier, the brushless motors needed their own power source since they drew too much.
+            Although, it sounds like making up excuses I would really blame this on the lack of time. We chose to work on the functional aspects of the device as opposed to QOL changes. In hindsight, I think we were all capable of finding a circuit that could do this.
+            Off the top of my head, we would need to use the power source we used for the brushless motors and scale it down for the Adruino. Effectively a gain circuit would be used that would get the voltage and current to a fraction the source.
+            Again, it SEEMs simple on paper. I'm sure it would be more difficult but I think we could've figured it out eventually.
           </div>
         </p>
         <p>
@@ -179,9 +187,9 @@
         </p>
         <h3 class="lead"> Microcontroller Aspects </h3>
         <p class='text-left'>
-          I was left soley in charge of microcontroller part. I did consult my memebers for many parts, but I would say I did most of the work this part still. The choice of microcontroller was easy; it would be Arduino. There may be better choices, especially in terms of size.
-          However, we felt that the Arduino was 'the' go to microcontroller that would be affordable while being open source. The microcontroller acts as the brain of the entire device. It recieves the commands from the Android app via Bluetooth then it sends the required data
-          to each port. We decided to use an HC-06 Bluetooth module since we already had one and that they were a very common module used for Bluetooth. The steper motors were chosen purely because they were cheap and drew little power as we knew we wouldn't need stronger ones.
+          I was left solely in charge of the microcontroller part. I did consult my members for many parts, but I would say I did most of the work this part still. The choice of microcontroller was easy; it would be Arduino. There may be better choices, especially in terms of size.
+          However, we felt that the Arduino was 'the' go to microcontroller that would be affordable while being open source. The microcontroller acts as the brain of the entire device. It receives the commands from the Android app via Bluetooth then it sends the required data
+          to each port. We decided to use an HC-06 Bluetooth module since we already had one and that they were a very common module used for Bluetooth. The stepper motors were chosen purely because they were cheap and drew little power as we knew we wouldn't need stronger ones.
         </p>
         </br>
         </br>
@@ -196,8 +204,8 @@
         </p>
         <h3 class="lead"> Android App Aspects </h3>
         <p class='text-left'>
-          Mackenzie and I worked on this part since I had previous expiernce developing an Android app. My primary task was to make sure that we could connect the HC-06 module to the phone, while hers was to develop the app that would be used. I won't speak to much about the design of app
-          since I believe it's a matter of taste and neither of us are experienced UI designers. The first task was to establish Bluetooth connection. This was surprinsgly easy. It was a matter of opening a Bluetooth socket.
+          Mackenzie and I worked on this part since I had previous experience developing an Android app. My primary task was to make sure that we could connect the HC-06 module to the phone, while hers was to develop the app that would be used. I won't speak to much about the design of app
+          since I believe it's a matter of taste and neither of us are experienced UI designers. The first task was to establish Bluetooth connection. This was surprisingly easy. It was a matter of opening a Bluetooth socket.
         </p>
         <p>
           Assigned to:
@@ -255,16 +263,16 @@
       <div class="box shadow p-3 mb-3 bg-white rounded">
         <h2 class="display-4"> Conclusion </h2>
         <p class="text-left">
-          Despite the exhaustion and 2 car accidents that was invovled in this project; I ended feeling very proud of what we had done. The judges at the presentation were very understanding and seemed interested in what we did. Considering we won something, I think we did pretty good.
-          It was good experience, and honestly it's kind of what a lot of students come into engineering thinking it would be like.
+          Despite the exhaustion and 2 car accidents that were involved in this project; I ended feeling very proud of what we had done. The judges at the presentation were very understanding and seemed interested in what we did. Considering we won something, I think we did pretty good.
+          It was a good experience, and honestly it's kind of what a lot of students come into engineering thinking it would be like.
           </br>
           </br>
           Generally, I can think of many things that can improved. Our weakest point was the mechanical related stuff.
           </br>
           </br>
           Now for my honest thoughts as a badminton player. Trying to use this device as a shuttle feeder is not practical. It's extremely unnatural to move and react to it. I can understand why similar devices are not as popular besides the price. However, I think I'm being narrow minded.
-          Many players grow and learn to watch the racket and react to the sound of shuttle. This doesn't happen with a machhine like this. So there are no cues when to move besides the scream of the motors, which leads me to feeling that it's unnatural.
-          I think I could eventually get use to this, but I think these kind of tools can still be super effective at training novices who haven't begun to learn this subtle cues of when to move.
+          Many players grow and learn to watch the racket and react to the sound of the shuttle. This doesn't happen with a machine like this. So there are no cues when to move besides the scream of the motors, which leads me to feeling that it's unnatural.
+          I think I could eventually get comfortable to this, but I think these kinds of tools can still be super effective at training novices who haven't begun to learn these subtle cues of when to move.
         </p>
       </div>
       </br>
